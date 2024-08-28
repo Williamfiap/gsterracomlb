@@ -6,9 +6,9 @@ terraform {
     }
   }
   backend "s3" {
-    bucket         = "tf-s3-gsterra-001"
+    bucket         = "tf-s3-modules-001"
     key            = "terraform.tfstate"
-    dynamodb_table = "tf-dynamo-gsterra-001"
+    dynamodb_table = "tf-dynamo-modules-001"
     region         = "us-east-1"
   }
 }
